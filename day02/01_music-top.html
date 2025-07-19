@@ -65,7 +65,7 @@
       background: url(./images/sprite_01.png) -226px 0;
     } */
 
-    .topbar1 .bar-left .list .item.active {
+    .topbar .bar-left .list .item.active {
       position: relative;
       &::after {
         content: "";
@@ -80,12 +80,67 @@
       }
     }
 
+    .topbar .bar-left .list .item:last-child {
+      position: relative;
+    }
+
     .topbar .bar-left .list .item .icon-hot {
       position: absolute;
-      width: 28px;
-      height: 19px;
       top: 18px;
-      background: url(./images/sprite_01.png) -190px 0;
+      right: -10px;
+    }
+
+    /* 布局右侧 */
+    .topbar .bar-right {
+      display: flex;
+      align-items: center; /* 可以作用到.bar-right的所有子元素及子元素的子元素在垂直方向上居中 */
+      padding-right: 20px;
+    }
+
+    /* 这一行必须要写在下一行的前面 */
+    .topbar .bar-right .login:hover a {
+      color: #ccc;
+    }
+
+    .topbar .bar-right .login a{
+      color: #787878;
+      &:hover {
+        color: #787878;
+        text-decoration: underline;
+      }
+    }
+
+    .topbar .bar-right .author a {
+      display: block;
+      box-sizing: border-box;
+      width: 90px;
+      height: 32px;
+      line-height: 30px;
+      margin: 0 20px;
+      color: #ccc;
+      text-align: center;
+      border: 1px solid #4f4f4f;
+      border-radius: 20px;
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+
+    .topbar .bar-right .search {
+      box-sizing: border-box;
+      width: 158px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 32px;
+      background-color: #fff;
+      background-position: 0 -99px;
+    }
+
+    .topbar .bar-right .search input {
+      width: 118px;
+      margin-left: 25px;
+      font-size: 12px;
     }
   </style>
 </head>
@@ -106,13 +161,21 @@
           <li>
             <a href="#" class="item">
               下载客户端
-              <i class="icon-hot"></i>
+              <i class="topbar_sprite topbar_icon_hot icon-hot"></i>
             </a>
           </li>
         </ul>
       </div>
       <div class="bar-right">
-        bar-right
+        <div class="search topbar_sprite">
+          <input type="text" placeholder="音乐/视频/电台/用户" />
+        </div>
+        <div class="author">
+          <a href="#">创作者中心</a>
+        </div>
+        <div class="login">
+          <a href="#">登录</a>
+        </div>
       </div>
     </div>
     <div class="topnav"></div>

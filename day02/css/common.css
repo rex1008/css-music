@@ -10,3 +10,13 @@ body {
 .wrapper_02 {
   width: 980px;
 }
+
+.topbar_sprite {
+  background-image: url(../images/sprite_01.png);
+}
+
+.topbar_icon_hot {
+  width: 28px;
+  height: 19px;
+  background-position: -190px 0;
+}
