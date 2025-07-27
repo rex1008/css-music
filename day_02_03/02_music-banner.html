@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>music 轮播图</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <style>
+    .banner {
+      height: 285px;
+      background: url(./images/banner_bg-01.jpg) center center / 6000px;
+    }
+
+    .banner .area {
+      height: 285px;
+      background-color: orange;
+    }
+
+    .banner .area-left .img-list {
+      display: flex;
+      width: 730px;
+      overflow: hidden;
+    }
+
+    .banner .area-left .img-list li {
+      flex-shrink: 0;
+      width: 100%;
+    }
+
+    .banner .area-left .img-list .item {
+      display: block;
+    }
+
+    .banner .area-left .img-list .item img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="banner">
+    <div class="area wrapper_03">
+      <div class="area-left">
+        <ul class="img-list">
+          <li>
+            <a href="#" class="item">
+              <img src="./images/banner_01.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <img src="./images/banner_01.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <img src="./images/banner_01.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="#" class="item">
+              <img src="./images/banner_01.jpg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="area-right"></div>
+    </div>
+  </div>
+
+</body>
+
+</html>
