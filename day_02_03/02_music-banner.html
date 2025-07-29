@@ -93,6 +93,34 @@
       color: #8d8d8d;
       text-align: center;
     }
+
+    .banner .area .control {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 37px;
+      height: 63px;
+      margin: auto 0;
+      background-image: url(./images/banner_sprite.png)
+    }
+
+    .banner .area .control.control-left {
+      left: -60px;
+      background-position: 0 -360px;
+    }
+
+    .banner .area .control.control-left:hover {
+      background-position: 0 -430px;
+    }
+
+    .banner .area .control.control-right {
+      right: -60px;
+      background-position: 0 -508px;
+    }
+
+    .banner .area .control.control-right:hover {
+      background-position: 0 -578px;
+    }
   </style>
 </head>
 
@@ -140,6 +168,8 @@
         <a href="#" class="download">下载客户端</a>
         <p class="desc">PC 安卓 iPhone WP iPad Mac 六大客户端</p>
       </div>
+      <a href="#" class="control control-left"></a>
+      <a href="#" class="control control-right"></a>
     </div>
   </div>
 
