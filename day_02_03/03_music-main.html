@@ -28,7 +28,33 @@
     .main .area-right .user-login {
       width: 100%;
       height: 126px;
-      background-color: red;
+      background: url(./images/main_sprite.png) 0 0;
+    }
+
+    .main .area-right .user-login .desc {
+      width: 205px;
+      margin: 0 auto;
+      padding-top: 16px;
+      color: #666;
+      font-size: 12px;
+      line-height: 22px;
+    }
+
+    .main .area-right .user-login .btn {
+      display: block;
+      width: 100px;
+      height: 31px;
+      line-height: 31px;
+      margin: 15px auto 0 auto;
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+      background: url(./images/main_sprite.png) 0 -195px;
+      text-shadow: 0 1px 0 #8a060b;
+    }
+
+    .main .area-right .user-login .btn:hover {
+      background-position: -110px -195px;
     }
   </style>
 </head>
@@ -39,7 +65,10 @@
       <div class="area-left">
       </div>
       <div class="area-right">
-        <div class="user-login"></div>
+        <div class="user-login">
+          <p class="desc">登录CSS音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+          <a href="" class="btn">用户登录</a>
+        </div>
       </div>
     </div>
   </div>
