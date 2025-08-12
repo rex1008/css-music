@@ -7,11 +7,16 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/common.css">
   <style>
+    body {
+      text-align: center;
+    }
+
     .apply {
       display: inline-block;
       width: 210px;
       height: 31px;
       line-height: 31px;
+      margin-top: 200px;
       text-align: center;
       font-size: 12px;
       font-weight: 700;
@@ -21,6 +26,21 @@
       border: 1px solid #aaa; */
       border-radius: 3px;
       background: url(./images/btn_sprite.png) right -100px;
+      padding-right: 5px;
+    }
+
+    .apply:hover {
+      background-position: right -182px;
+    }
+
+    .apply > i {
+      display: block;
+      background: url(./images/btn_sprite.png) 0 -59px;
+      padding-left: 3px;
+    }
+
+    .apply > i:hover {
+      background-position: 0 -141px;
     }
   </style>
 </head>
