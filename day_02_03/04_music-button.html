@@ -12,42 +12,28 @@
     }
 
     .apply {
-      display: inline-block;
       width: 210px;
-      height: 31px;
-      line-height: 31px;
       margin-top: 200px;
-      text-align: center;
       font-size: 12px;
       font-weight: 700;
       color: #000;
-      background-color: #eee;
-      /* box-sizing: border-box;
-      border: 1px solid #aaa; */
+      /* background-color: #eee; */
       border-radius: 3px;
-      background: url(./images/btn_sprite.png) right -100px;
-      padding-right: 5px;
     }
 
-    .apply:hover {
-      background-position: right -182px;
-    }
-
-    .apply > i {
-      display: block;
-      background: url(./images/btn_sprite.png) 0 -59px;
-      padding-left: 3px;
-    }
-
-    .apply > i:hover {
-      background-position: 0 -141px;
+    .short {
+      width: 100px;
     }
   </style>
 </head>
 <body>
   
-  <a href="#" class="apply">
-    <i>申请成为music音乐人</i>
+  <a href="#" class="btn_sprite btn_type_01_sup apply">
+    <i class="btn_sprite btn_type_01_sub">申请成为music音乐人</i>
+  </a>
+
+  <a href="#" class="btn_sprite btn_type_01_sup short">
+    <i class="btn_sprite btn_type_01_sub">短按钮</i>
   </a>
 
 </body>
