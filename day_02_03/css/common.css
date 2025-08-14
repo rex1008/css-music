@@ -29,15 +29,15 @@ body {
 
 .btn_sprite {
   display: inline-block;
+  height: 31px;
+  line-height: 31px;
+  text-align: center;
   background-image: url(../images/btn_sprite.png);
 }
 
 .btn_type_01_sup {
   background-position: right -100px;
   padding-right: 5px;
-  height: 31px;
-  line-height: 31px;
-  text-align: center;
 }
 
 .btn_type_01_sup:hover {
@@ -48,9 +48,20 @@ body {
   display: block;
   background-position: 0 -59px;
   padding-left: 3px;
-  height: 31px;
 }
 
 .btn_type_01_sub:hover {
   background-position: 0 -141px;
+}
+
+.btn_type_favor_sup {
+  background-position: right -1020px;
+  padding-right: 5px;
+}
+
+.btn_type_favor_sub {
+  display: inline-block;
+  background-position: 0 -977px;
+  padding-left: 28px;
+  padding-right: 3px;
 }
