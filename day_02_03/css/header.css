@@ -44,10 +44,28 @@
   background: url(../images/main_sprite.png) no-repeat 0 -240px;
 }
 
+.header_type_02 .header-left {
+  display: flex;
+}
+
 .header_type_02 .title {
   font-size: 20px;
   font-weight: normal;
   color: #333;
+}
+
+.header_type_02 .keywords {
+  display: flex;
+  margin: 7px 0 0 20px;
+}
+
+.header_type_02 .keywords .item {
+  color: #666;
+}
+
+.header_type_02 .keywords .line {
+  color: #ccc;
+  margin: 1px 12px 0 12px;
 }
 
 .header_type_02 .more {
